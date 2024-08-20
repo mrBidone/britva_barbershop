@@ -76,7 +76,6 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  align-content: flex-end;
   padding: 105px 0 97px 60px;
 }
 
@@ -101,4 +100,21 @@ body {
   font-size: 13px;
   line-height: 1.69;
   color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../img/desk/bg-desk.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page-logo {
+    margin-bottom: 162px;
+  }
+
+  .page-header {
+    padding: 140px 0 163px 135px;
+  }
 }
