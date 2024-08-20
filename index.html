@@ -62,7 +62,14 @@
           </li>
         </ul>
       </nav>
-      <p class="privacy-policy">2024, Britva Barbershop</p>
+      <p class="privacy-policy"><span></span>, Britva Barbershop</p>
     </header>
+    <script defer>
+      window.addEventListener("load", function () {
+        const currentYear = new Date().getFullYear();
+        document.querySelector(".privacy-policy span").textContent =
+          currentYear;
+      });
+    </script>
   </body>
 </html>
